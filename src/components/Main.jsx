@@ -21,8 +21,8 @@ const Main = () => {
                 />
               </div>
             </div>
-            <h1 className='sm:text-5xl text-4xl font-bold text-gray-800'>I'm Diego Hernández García</h1>
-            <h2 className='flex sm:text-3xl text-2xl pt-4 text-gray-800'>I'm
+            <h1 className='text-center sm:text-5xl text-4xl font-bold text-gray-800'>I'm Diego Hernández García</h1>
+            <h2 className='text-center flex sm:text-3xl text-2xl pt-4 text-gray-800'>I'm
                 <TypeAnimation
                 sequence={[
                         // Same substring at the start will only be typed out once, initially
@@ -74,6 +74,31 @@ const Main = () => {
               >
                 <FaGithub className='cursor-pointer hover:text-red-600 transition' size={20} />
               </a>
+          </div>
+          <div className='text-center px-4 max-w-3xl mx-auto'>
+            <p>
+              Hi! I’m Diego Hernández García, a Videogame Programming Engineer.
+            </p>
+            <p>
+              My goal is to create amazing worlds, where you can enjoy
+              everything on any device, without losing quality or performance.
+            </p>
+            <p>
+              I have experience using advanced game engines like Unity and
+              Unreal Engine 5, working on different projects that show my ability
+              to develop dynamic gameplay mechanics, immersive
+              environments, and special effects that support the game’s story.
+            </p>
+            <p>
+              In this portfolio, you’ll find a selection of my best works from my
+              studies in the Videogame Programming Engineering program at
+              UNIAT.
+            </p>
+            <p>
+              I’m excited to share my journey and achievements, I hope this
+              portfolio shows not only my skills and knowledge, also my
+              passion and dedication to the world of game development.
+            </p>
           </div>
         </div>
       </div>
