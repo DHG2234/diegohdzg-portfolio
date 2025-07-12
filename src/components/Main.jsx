@@ -5,12 +5,12 @@ import {TypeAnimation} from 'react-type-animation'
 import FotoImg from '../assets/DIEGO.jpg'
 const Main = () => {
   return (
-    <div id='main'>
+    <div id='main' className='relative w-full h-screen overflow-hidden'>
       <img src="" alt="" />
         {/* Imagen de fondo */}
-        <img className='w-full h-screen object-cover object-left scale-x-[-1' src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+        <img className='w-full h-full object-cover object-left scale-x-[-1' src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
          {/* Capa semitransparente para mejor contraste */}
-        <div className='w-full h-screen absolute top-0 left-0 bg-white/50'>
+        <div className='w-full h-full absolute top-0 left-0 bg-white/50'>
           <div className='max-w-[700px] m-auto h-full w-full flex flex-col justify-center items-center'>
             <div className="flex flex-col items-center pb-6">
               <div className="rounded-full overflow-hidden w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 border-4 border-white shadow-lg">
