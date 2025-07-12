@@ -1,4 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+
+.title {
+    font-family: "Antonio", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.text{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
 
 *{
     scroll-behavior: smooth;

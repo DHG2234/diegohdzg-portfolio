@@ -21,16 +21,14 @@ const Main = () => {
                 />
               </div>
             </div>
-            <h1 className='text-center sm:text-5xl text-4xl font-bold text-gray-800'>I'm Diego Hernández García</h1>
-            <h2 className='text-center flex sm:text-3xl text-2xl pt-4 text-gray-800'>I'm
+            <h1 className='title text-center sm:text-5xl text-4xl font-bold text-gray-800'>I'm Diego Hernández García</h1>
+            <h2 className='title uppercase text-center flex sm:text-3xl text-[1.4rem] pt-4 text-gray-800'>I'm
                 <TypeAnimation
                 sequence={[
                         // Same substring at the start will only be typed out once, initially
                         'a son',
                         1000, // wait 1s before replacing "Mice" with "Hamsters"
                         'a brother',
-                        1000,
-                        'a student',
                         1000,
                         'a developer',
                         1000,
@@ -40,14 +38,12 @@ const Main = () => {
                         1000,
                         'a videogame programming engineer',
                         1000,
-                        'better than yesterday, but not as good as tomorrow',
-                        1000,
                         'the future pirate king!',
                         1000
                     ]}
                     wrapper="div"
                     speed={50}
-                    style={{ fontSize: '1em', paddingLeft: '5px'}}
+                    style={{ fontSize: '1.4rem', paddingLeft: '5px'}}
                     repeat={Infinity}
                     cursor={true}
                 />
@@ -75,7 +71,7 @@ const Main = () => {
                 <FaGithub className='cursor-pointer hover:text-red-600 transition' size={20} />
               </a>
           </div>
-          <div className='py-6 text-center px-4 max-w-3xl mx-auto break-work'>
+          <div className='text py-6 text-center px-10 max-w-3xl mx-auto break-work'>
             <p>
               Hi! I’m Diego Hernández García, a Videogame Programming Engineer.
             </p>
