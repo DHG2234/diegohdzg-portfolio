@@ -75,7 +75,7 @@ const Main = () => {
                 <FaGithub className='cursor-pointer hover:text-red-600 transition' size={20} />
               </a>
           </div>
-          <div className='text-center px-4 max-w-3xl mx-auto'>
+          <div className='py-6 text-center px-4 max-w-3xl mx-auto break-work'>
             <p>
               Hi! I’m Diego Hernández García, a Videogame Programming Engineer.
             </p>
