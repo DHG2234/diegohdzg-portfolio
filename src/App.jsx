@@ -1,23 +1,18 @@
-import { useState } from 'react'
-import Sidenav from './components/Sidenav'
-import Main from './components/Main'
-import Work from './components/Work'
-import Projects from './components/Projects'
-import Contact from './components/Contact'
+import { Sidenav } from "@layout";
+import { Contact, Projects, Work, Hero } from "@pages";
 
 function App() {
-
   return (
     <div className="w-full overflow-x-hidden">
       <div>
         <Sidenav />
-        <Main />
+        <Hero />
         <Work />
         <Projects />
         <Contact />
       </div>
-   </div>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
