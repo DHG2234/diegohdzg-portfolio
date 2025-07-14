@@ -2,17 +2,17 @@ import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { BsPerson } from "react-icons/bs";
 
-import resume from "/DiegoHdzG_CV.pdf.pdf";
+import resume from "/DiegoHdzG_CV_Eng.pdf.pdf";
+import portfolio from "/DiegoHernándezGarcía_Portfolio_Eng.pdf"
 import { sidenav_btn } from "@components/constants.js";
 
-const Navbtn = ({ href, active_target, download, children, onClick }) => (
+const Navbtn = ({ href, active_target, children, onClick }) => (
   <a
     href={href}
     onClick={onClick}
     className="w-[75%] flex justify-center items-center rounded-full shadow-md bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
     target={active_target ? "_blank" : ""}
     rel={active_target ? "noopener noreferrer" : ""}
-    download={download}
   >
     {children}
   </a>
@@ -47,11 +47,18 @@ const Sidenav = () => {
           <Navbtn
             href={resume}
             active_target={true}
-            download
             onClick={handleNav}
           >
             <BsPerson size={20} />
             <span className="pl-4">Resume</span>
+          </Navbtn>
+          <Navbtn
+            href={portfolio}
+            active_target={true}
+            onClick={handleNav}
+          >
+            <BsPerson size={20} />
+            <span className="pl-4">Portfolio</span>
           </Navbtn>
         </nav>
       )}
@@ -69,11 +76,17 @@ const Sidenav = () => {
             </Navbtn>
           );
         })}
-        <Navbtn href={resume} active_target={true} download>
+        <Navbtn href={resume} active_target={true}>
           <div className="h-5 w-5 flex items-center justify-center">
             <BsPerson size={20} />
           </div>
           <span className="pl-2">Resume</span>
+        </Navbtn>
+        <Navbtn href={portfolio} active_target={true}>
+          <div className="h-5 w-5 flex items-center justify-center">
+            <BsPerson size={20} />
+          </div>
+          <span className="pl-2">Portfolio</span>
         </Navbtn>
       </nav>
     </>

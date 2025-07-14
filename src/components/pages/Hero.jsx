@@ -1,8 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedinIn, FaYoutube } from "react-icons/fa";
-import { FaGithubAlt, FaSquareGithub } from "react-icons/fa6";
 import { TypeAnimation } from "react-type-animation";
-// import FotoImg from '../assets/DIEGO.jpg'
+import FotoImg from '/DIEGO.jpg'
 const Main = () => {
   return (
     <div id="main" className="relative w-full h-screen overflow-hidden">
@@ -19,7 +18,7 @@ const Main = () => {
           <div className="flex flex-col items-center pb-6">
             <div className="rounded-full overflow-hidden w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 border-4 border-white shadow-lg">
               <img
-                // src={FotoImg}
+                src={FotoImg}
                 alt="Diego Hernández"
                 className="w-full h-full object-cover object-top"
               />
@@ -94,22 +93,6 @@ const Main = () => {
             <p>
               My goal is to create amazing worlds, where you can enjoy
               everything on any device, without losing quality or performance.
-            </p>
-            <p>
-              I have experience using advanced game engines like Unity and
-              Unreal Engine 5, working on different projects that show my
-              ability to develop dynamic gameplay mechanics, immersive
-              environments, and special effects that support the game’s story.
-            </p>
-            <p>
-              In this portfolio, you’ll find a selection of my best works from
-              my studies in the Videogame Programming Engineering program at
-              UNIAT.
-            </p>
-            <p>
-              I’m excited to share my journey and achievements, I hope this
-              portfolio shows not only my skills and knowledge, also my passion
-              and dedication to the world of game development.
             </p>
           </div>
         </div>

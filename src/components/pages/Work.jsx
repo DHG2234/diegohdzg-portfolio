@@ -7,7 +7,7 @@ const data = [
     title: "General Assistant – Makimore Sushi",
     duration: "2 years",
     details: (
-      <div className="py-1 break-words">
+      <div className="text py-1 break-words">
         <p>
           - I developed skills such as teamwork, customer service, and how to
           react in a crisis.
@@ -29,7 +29,7 @@ const data = [
 const Work = () => {
   return (
     <div id="work" className="max-w-[1040px] m-auto md:pl-20 p-4 py-16">
-      <h1 className="text-4xl font-bold text-center text-[#001b5e]">Work</h1>
+      <h1 className="title text-4xl font-bold text-center text-[#001b5e]">Work</h1>
       {data.map((item, idx) => (
         <WorkItem
           key={idx}
