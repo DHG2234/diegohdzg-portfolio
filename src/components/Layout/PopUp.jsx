@@ -83,8 +83,17 @@ const PopUp = ({ project, onClose, onPrev, onNext }) => {
             <div className="aspect-video w-full my-4">
               <iframe
                 className="w-full h-full rounded-md"
-                src={project.videoUrl}
+                src={project.videoUrl?.replace("watch?v=", "embed/")}
                 title={project.title}
+                frameborder="0"
+                allow="accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
                 allowFullScreen
               ></iframe>
             </div>
