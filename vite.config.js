@@ -16,3 +16,14 @@ export default defineConfig({
     },
   },
 });
+
+// tailwind.config.js
+module.exports = {
+  darkMode: 'media', // usa el sistema del SO (media query prefers-color-scheme)
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+
