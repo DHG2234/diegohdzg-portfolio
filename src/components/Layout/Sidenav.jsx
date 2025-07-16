@@ -12,7 +12,7 @@ const Navbtn = ({ href, active_target, children, onClick }) => (
   <a
     href={href}
     onClick={onClick}
-    className="w-[100%] flex justify-center items-center rounded-full shadow-md bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+    className="w-[75%] flex justify-center items-center rounded-full shadow-md bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
     target={active_target ? "_blank" : ""}
     rel={active_target ? "noopener noreferrer" : ""}
   >
@@ -51,11 +51,11 @@ const Sidenav = ({ isPopUpOpen }) => {
               </Navbtn>
             );
           })}
-          <Navbtn href={resume} active_target={true} onClick={handleNav}>
+          <Navbtn href={resume} active_target={true} >
             <BsPerson size={20} />
             <span className="pl-4">Resume</span>
           </Navbtn>
-          <Navbtn href={portfolio} active_target={true} onClick={handleNav}>
+          <Navbtn href={portfolio} active_target={true} >
             <BsPerson size={20} />
             <span className="pl-4">Portfolio</span>
           </Navbtn>

@@ -1,6 +1,7 @@
 import { FaGithub, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import FotoImg from '/DIEGO.jpg'
+import BGImg from '/AHGIPV.jpg'
 const Main = () => {
   return (
     <div id="main" className="relative w-full h-screen overflow-hidden">
