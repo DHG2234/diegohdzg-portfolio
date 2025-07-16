@@ -3,6 +3,7 @@ import {
   AiOutlineProject,
   AiOutlineMail,
 } from "react-icons/ai";
+
 import { GrProjects } from "react-icons/gr";
 
 import PixelAdventureImg from "/PixelAdventure.png";
@@ -30,7 +31,7 @@ export const sidenav_btn = [
   },
   {
     ref: "#contact",
-    text: "Contacts",
+    text: "Contact",
     icon: AiOutlineMail,
   },
 ];

@@ -6,23 +6,23 @@ const data = [
     year: "2022 - 2024",
     title: "General Assistant – Makimore Sushi",
     duration: "2 years",
-    details: (
-      <div className="text py-1 break-words">
-        <p>
-          - I developed skills such as teamwork, customer service, and how to
-          react in a crisis.
-        </p>
-        <p>
-          - I implemented practices to improve the efficiency in the creation
-          and management of resources, reducing errors and time for optimal use.
-        </p>
-        <p>
-          - I provided solutions such as pre-preparing delivery orders by
-          organizing the items so that only the dish or dishes need to be added
-          and sealed for delivery to the customer.
-        </p>
-      </div>
-    ),
+    details: "text"
+
+      // <div className="text py-1 break-words">
+      //   <p>
+      //     - I developed skills such as teamwork, customer service, and how to
+      //     react in a crisis.
+      //   </p>
+      //   <p>
+      //     - I implemented practices to improve the efficiency in the creation
+      //     and management of resources, reducing errors and time for optimal use.
+      //   </p>
+      //   <p>
+      //     - I provided solutions such as pre-preparing delivery orders by
+      //     organizing the items so that only the dish or dishes need to be added
+      //     and sealed for delivery to the customer.
+      //   </p>
+      // </div>
   },
 ];
 

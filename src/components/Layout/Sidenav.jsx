@@ -1,9 +1,11 @@
+import React from "react";
+
 import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { BsPerson } from "react-icons/bs";
 
 import resume from "/DiegoHdzG_CV_Eng.pdf.pdf";
-import portfolio from "/DiegoHernándezGarcía_Portfolio_Eng.pdf"
+import portfolio from "/DiegoHernándezGarcía_Portfolio_Eng.pdf";
 import { sidenav_btn } from "@components/constants.js";
 
 const Navbtn = ({ href, active_target, children, onClick }) => (
@@ -18,21 +20,26 @@ const Navbtn = ({ href, active_target, children, onClick }) => (
   </a>
 );
 
-const Sidenav = () => {
+const Sidenav = ({ isPopUpOpen }) => {
   const [nav, setNav] = useState(false);
 
-  const handleNav = () => setNav(!nav);
+  const handleNav = () => {
+    // Solo permite abrir/cerrar si no hay pop-up activo
+    if (!isPopUpOpen) setNav(!nav);
+  };
 
   return (
     <>
-      {/* Botón hamburguesa solo visible en móviles */}
+      {/* Botón hamburguesa (visible solo en móviles) */}
       <AiOutlineMenu
         onClick={handleNav}
-        className="fixed top-4 right-4 z-[99] md:hidden"
+        className={`fixed top-4 right-4 z-[99] md:hidden ${
+          isPopUpOpen ? "pointer-events-none opacity-40" : ""
+        }`}
         size={25}
       />
 
-      {/* Menú móvil desplegable */}
+      {/* Menú móvil */}
       {nav && (
         <nav className="fixed w-full h-full bg-white/90 flex flex-col justify-center items-center z-20">
           {sidenav_btn.map((data) => {
@@ -44,26 +51,18 @@ const Sidenav = () => {
               </Navbtn>
             );
           })}
-          <Navbtn
-            href={resume}
-            active_target={true}
-            onClick={handleNav}
-          >
+          <Navbtn href={resume} active_target={true} onClick={handleNav}>
             <BsPerson size={20} />
             <span className="pl-4">Resume</span>
           </Navbtn>
-          <Navbtn
-            href={portfolio}
-            active_target={true}
-            onClick={handleNav}
-          >
+          <Navbtn href={portfolio} active_target={true} onClick={handleNav}>
             <BsPerson size={20} />
             <span className="pl-4">Portfolio</span>
           </Navbtn>
         </nav>
       )}
 
-      {/* Menú lateral para escritorio */}
+      {/* Menú lateral (desktop) */}
       <nav className="hidden md:block fixed top-[25%] z-10">
         {sidenav_btn.map((data) => {
           const Icon = data.icon;
