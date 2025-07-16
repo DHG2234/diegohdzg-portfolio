@@ -1,4 +1,3 @@
-import React from "react";
 import { FaGithub, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import FotoImg from '/DIEGO.jpg'
