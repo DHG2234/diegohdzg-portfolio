@@ -4,7 +4,7 @@ const Projects = ({ onOpenPopUp }) => {
   return (
     <div id="projects" className="p-4">
       <h2 className="title text-3xl text-center mb-6">My Projects</h2>
-      <div className="grid md:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-3 gap-6 max-w-[1040px] m-auto md:pl-20 p-4 py-4">
         {projects.map((proj, index) => (
           <div
             key={proj.id}

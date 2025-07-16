@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Sidenav, PopUp } from "@layout";
-import { Contact, Projects, Work, Hero } from "@pages";
+import { Contact, Projects, Work, Hero, DemoReel } from "@pages";
 import { projects } from "@components/constants.js";
 
 function App() {
@@ -22,6 +22,7 @@ function App() {
       <div className="pointer-events-auto">
         <Sidenav isPopUpOpen={isPopUpOpen} />
         <Hero />
+        <DemoReel />
         <Work />
         <Projects onOpenPopUp={handleOpen} />
         <Contact />
