@@ -68,13 +68,18 @@ const PopUp = ({ project, onClose, onPrev, onNext }) => {
           <div className="text-center">
             <h2 className="title text-[2rem] mb-2">{project.title}</h2>
             <p className="text text-[1rem] mb-4">{project.software}</p>
-            <p className="text text-[0.95rem] mb-4">{project.description1}</p>
+            <p className="text text-[0.95rem] mb-4 text-left">{project.description1}</p>
             <img
               src={project.image}
               alt={project.title}
               className="w-full my-4 rounded-md"
             />
-            <p className="text text-[0.95rem] mb-4">{project.description2}</p>
+            <p className="text text-[0.95rem] mb-4 text-left">{project.description2}</p>
+            <img
+              src={project.image2}
+              alt={project.title}
+              className="w-full my-4 rounded-md"
+            />
             <div className="aspect-video w-full my-4">
               <iframe
                 className="w-full h-full rounded-md"

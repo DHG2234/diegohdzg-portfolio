@@ -7,12 +7,12 @@ const WorkItem = ({ year, title, duration, details }) => {
           <span className="inline-block px-2 py-1 font-semibold text-white bg-[#001b5e] rounded-md">
             {year}
           </span>
-          <span className="text-lg font-semibold text-[#001b5e]">{title}</span>
-          <span className="my-1 text-sm font-normal leading-none text-stone-400">
+          <span className="title text-lg font-semibold text-[#001b5e]">{title}</span>
+          <span className="text my-1 text-sm font-normal leading-none text-stone-400">
             {duration}
           </span>
         </p>
-        <p className="my-2 text-base font-normal text-stone-500">{details}</p>
+        <p className="text my-2 text-base font-normal text-stone-500">{details}</p>
       </li>
     </ol>
   );
